@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/tasks'; //10.0.2.2
+const baseUrl = 'http://10.0.2.2:3000/tasks'; //10.0.2.2
     const getTasks = async () => {
         const response = await fetch(baseUrl);
         const Tasks = await response.json();
