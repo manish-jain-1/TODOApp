@@ -1,0 +1,24 @@
+{
+    "tasks": [{
+            "id": "1",
+            "title": "get banana",
+            "completed": 0,
+            "assignedTo": "manish",
+            "dueBy": "1/1/2019"
+        },
+        {
+            "id": "2",
+            "title": "go to school",
+            "completed": 0,
+            "assignedTo": "khushi",
+            "dueBy": "1/1/2019"
+        },
+        {
+            "id": "3",
+            "title": "take train go to work",
+            "completed": 0,
+            "assignedTo": "manish",
+            "dueBy": "1/1/2019"
+        }
+    ]
+}
