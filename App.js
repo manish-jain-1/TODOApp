@@ -89,26 +89,26 @@ function Separator() {
 }
 
 function Item({ props, id, title, dueBy, assignedTo }) {
-  ImagePicker.showImagePicker(options, (response) => {
-    console.log('Response = ', response);
+  // ImagePicker.showImagePicker(options, (response) => {
+  //   console.log('Response = ', response);
   
-    if (response.didCancel) {
-      console.log('User cancelled image picker');
-    } else if (response.error) {
-      console.log('ImagePicker Error: ', response.error);
-    } else if (response.customButton) {
-      console.log('User tapped custom button: ', response.customButton);
-    } else {
-      const source = { uri: response.uri };
+  //   if (response.didCancel) {
+  //     console.log('User cancelled image picker');
+  //   } else if (response.error) {
+  //     console.log('ImagePicker Error: ', response.error);
+  //   } else if (response.customButton) {
+  //     console.log('User tapped custom button: ', response.customButton);
+  //   } else {
+  //     const source = { uri: response.uri };
   
-      // You can also display the image using data:
-      // const source = { uri: 'data:image/jpeg;base64,' + response.data };
+  //     // You can also display the image using data:
+  //     // const source = { uri: 'data:image/jpeg;base64,' + response.data };
   
-      this.setState({
-        avatarSource: source,
-      });
-    }
-  });
+  //     this.setState({
+  //       avatarSource: source,
+  //     });
+  //   }
+  // });
     return (
         <TouchableOpacity onPress={() => props.navigation.navigate('Details',  {
           id: id,
